@@ -10,6 +10,10 @@ import UIKit
 
 class secondViewController: UIViewController {
 
+    //variable to tell if the first question was right or not
+    var q1Correct = false
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,14 +26,21 @@ class secondViewController: UIViewController {
     }
     
 
-    /*
+    @IBAction func submitClicked(sender: AnyObject) {
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "toResultsViewController" {
+            //pass data here
+            
+        }
     }
-    */
+    
 
 }
