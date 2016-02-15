@@ -49,6 +49,9 @@ class ViewController: UIViewController {
     
     
     override func viewWillAppear(animated: Bool) {
+        //clear the text in case the user is retrying the quiz
+        questionAnswer.text = ""
+        
         //change the image each time the image will appear
         imageNumShown = Int.random(min: 0, max: answers.count-1)
         //set the correct image onto the screen
@@ -83,9 +86,11 @@ class ViewController: UIViewController {
             //pass the answer to the question
             vc.q1Answer = answers[imageNumShown]
             
+            //trim off any white space character if the user used the automatic fill on the keyboard
+            let answer = questionAnswer.text?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
             
             //user answered question correctly
-            if questionAnswer!.text == answers[imageNumShown] {
+            if answer == answers[imageNumShown] {
                 vc.q1Correct = true
             }
             //user answered incorrectly

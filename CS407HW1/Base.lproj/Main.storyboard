@@ -37,13 +37,13 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zp3-BB-TPr">
-                                <rect key="frame" x="260" y="255" width="81" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="250" y="255" width="101" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a State..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ocX-1v-I5e">
-                                <rect key="frame" x="200" y="306" width="200" height="30"/>
+                                <rect key="frame" x="200" y="311" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="gZ6-J8-hVS"/>
                                 </constraints>
@@ -51,7 +51,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7j-H5-T3f">
-                                <rect key="frame" x="276" y="346" width="49" height="30"/>
+                                <rect key="frame" x="276" y="351" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="submitClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ktG-OG-RmK"/>
@@ -106,32 +106,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Based Question 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yn7-TB-kpd">
-                                <rect key="frame" x="214" y="190" width="172" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="201" y="188" width="199" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9x-B2-9L9">
-                                <rect key="frame" x="276" y="301" width="49" height="30"/>
+                                <rect key="frame" x="276" y="303" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="submitClicked:" destination="xfF-wS-BBR" eventType="touchUpInside" id="ITI-lL-f8a"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter an Answer..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yKA-gR-Jla">
-                                <rect key="frame" x="175" y="241" width="250" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yKA-gR-Jla">
+                                <rect key="frame" x="175" y="243" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="qFp-tD-SGf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the following sum? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRR-0u-E2b">
+                                <rect key="frame" x="158" y="123" width="285" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.64756269629999996" green="0.96175642920000004" blue="0.98624622819999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="yn7-TB-kpd" firstAttribute="top" secondItem="IRR-0u-E2b" secondAttribute="bottom" constant="35" id="BCw-Uo-h1L"/>
                             <constraint firstItem="q9x-B2-9L9" firstAttribute="centerX" secondItem="Y8E-iA-mzr" secondAttribute="centerX" id="Dzy-O8-0SA"/>
                             <constraint firstItem="yKA-gR-Jla" firstAttribute="centerX" secondItem="Y8E-iA-mzr" secondAttribute="centerX" id="KSr-VO-G4H"/>
                             <constraint firstItem="yKA-gR-Jla" firstAttribute="top" secondItem="yn7-TB-kpd" secondAttribute="bottom" constant="30" id="LVt-LS-3J2"/>
+                            <constraint firstItem="IRR-0u-E2b" firstAttribute="centerX" secondItem="Y8E-iA-mzr" secondAttribute="centerX" id="OkK-pX-DPK"/>
                             <constraint firstItem="q9x-B2-9L9" firstAttribute="top" secondItem="yKA-gR-Jla" secondAttribute="bottom" constant="30" id="VNJ-58-XCo"/>
                             <constraint firstItem="yn7-TB-kpd" firstAttribute="centerX" secondItem="Y8E-iA-mzr" secondAttribute="centerX" id="d4J-nk-b9N"/>
                             <constraint firstItem="yn7-TB-kpd" firstAttribute="centerY" secondItem="Y8E-iA-mzr" secondAttribute="centerY" constant="-100" id="frK-Kf-Wi9"/>
@@ -166,28 +174,28 @@
                                     <action selector="retryClicked:" destination="wJo-JA-LeF" eventType="touchUpInside" id="pe0-pl-rQP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fv8-oM-BP9">
-                                <rect key="frame" x="239" y="50" width="123" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz Results!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fv8-oM-BP9">
+                                <rect key="frame" x="191" y="50" width="218" height="47.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Correct: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUp-PQ-xC3">
-                                <rect key="frame" x="202" y="181" width="196" height="30"/>
+                                <rect key="frame" x="202.5" y="122.5" width="195.5" height="29.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Incorrect: 0 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oml-5t-N9Y">
-                                <rect key="frame" x="193" y="317" width="215" height="30"/>
+                                <rect key="frame" x="193" y="177" width="215" height="29.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answers: Ohio, number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="er2-dj-qDy">
-                                <rect key="frame" x="177" y="442" width="246" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answers: Ohio, number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="er2-dj-qDy">
+                                <rect key="frame" x="181" y="231.5" width="238" height="21.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -196,15 +204,20 @@
                             <constraint firstItem="Fv8-oM-BP9" firstAttribute="centerX" secondItem="hd6-rD-SW0" secondAttribute="centerX" id="1Lg-sK-aok"/>
                             <constraint firstItem="WUp-PQ-xC3" firstAttribute="centerX" secondItem="hd6-rD-SW0" secondAttribute="centerX" id="3OD-KK-m1A"/>
                             <constraint firstItem="er2-dj-qDy" firstAttribute="centerX" secondItem="hd6-rD-SW0" secondAttribute="centerX" id="Ggt-Ac-7sy"/>
-                            <constraint firstItem="Fv8-oM-BP9" firstAttribute="top" secondItem="arm-RA-fAe" secondAttribute="bottom" constant="50" id="SJ5-4v-ROh"/>
-                            <constraint firstItem="WUp-PQ-xC3" firstAttribute="top" secondItem="Fv8-oM-BP9" secondAttribute="bottom" constant="83" id="VZW-iG-ib5"/>
-                            <constraint firstItem="oml-5t-N9Y" firstAttribute="top" secondItem="WUp-PQ-xC3" secondAttribute="bottom" constant="106" id="d55-vY-crc"/>
-                            <constraint firstItem="er2-dj-qDy" firstAttribute="top" secondItem="oml-5t-N9Y" secondAttribute="bottom" constant="95" id="jWJ-31-kDw"/>
+                            <constraint firstItem="Fv8-oM-BP9" firstAttribute="top" secondItem="arm-RA-fAe" secondAttribute="bottom" constant="100" id="SJ5-4v-ROh"/>
+                            <constraint firstItem="WUp-PQ-xC3" firstAttribute="top" secondItem="Fv8-oM-BP9" secondAttribute="bottom" constant="25" id="VZW-iG-ib5"/>
+                            <constraint firstItem="oml-5t-N9Y" firstAttribute="top" secondItem="WUp-PQ-xC3" secondAttribute="bottom" constant="25" id="d55-vY-crc"/>
+                            <constraint firstItem="er2-dj-qDy" firstAttribute="top" secondItem="oml-5t-N9Y" secondAttribute="bottom" constant="25" id="jWJ-31-kDw"/>
                             <constraint firstAttribute="trailing" secondItem="YH4-gB-e0j" secondAttribute="trailing" constant="15" id="oLa-Te-aLN"/>
                             <constraint firstItem="YH4-gB-e0j" firstAttribute="top" secondItem="arm-RA-fAe" secondAttribute="bottom" constant="15" id="xFg-wn-hzw"/>
                             <constraint firstItem="oml-5t-N9Y" firstAttribute="centerX" secondItem="hd6-rD-SW0" secondAttribute="centerX" id="xMf-Jj-Fae"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="correctAnswersLabel" destination="er2-dj-qDy" id="8M2-un-ILw"/>
+                        <outlet property="numCorrectLabel" destination="WUp-PQ-xC3" id="Bph-B7-huq"/>
+                        <outlet property="numIncorrectLabel" destination="oml-5t-N9Y" id="05L-Fv-qlW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZS-gV-hBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

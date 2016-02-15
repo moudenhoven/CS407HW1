@@ -18,23 +18,43 @@ class secondViewController: UIViewController {
     
     var q2Answer:Int?
     
+    //alert to make sure the user wants to submit their answer for sure
+    var submitAlertView : UIAlertController?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+        //setup the alert view to be shown when the user presses submit
+        submitAlertView = UIAlertController(title: "Submit?", message: "You will not be able to go back and change your answer.", preferredStyle: UIAlertControllerStyle.Alert)
+        let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) { (alert: UIAlertAction!) -> Void in
+            //print("cancel submission")
+        }
+        let submit = UIAlertAction(title: "Submit", style: UIAlertActionStyle.Default) { (alert: UIAlertAction!) -> Void in
+            //print("allowed submission")
+            //user clicks submit, segue to the second view controller
+            self.performSegueWithIdentifier("toResultsViewController", sender: self)
+        }
+        
+        //add the alert actions to the alert controller
+        submitAlertView!.addAction(cancel)
+        submitAlertView!.addAction(submit)
         
     }
     
     
     override func viewWillAppear(animated: Bool) {
-        //load the queestion into the label
+        //empty anything out of the text field every time the view appears
+        questionAnswer.text = ""
         
+        //load the queestion into the label
+        //generation of a random integer between 0 and 100. Int+extensions.swift from Ray Wenderlich
         let firstNum = Int.random(min: 0, max: 100)
         let secNum = Int.random(min: 0, max: 100)
         
-        let question = "What is the following sum? \(firstNum) + \(secNum) = ?"
+        let question = "\(firstNum) + \(secNum) = ?"
         
         //set the question
         questionLabel.text = question
@@ -54,6 +74,8 @@ class secondViewController: UIViewController {
     
 
     @IBAction func submitClicked(sender: AnyObject) {
+        //show the alert view to make sure users want to submit their answer
+        self.presentViewController(submitAlertView!, animated: true, completion: nil)
     }
     
     // MARK: - Navigation
@@ -65,6 +87,27 @@ class secondViewController: UIViewController {
         
         if segue.identifier == "toResultsViewController" {
             //pass data here
+            
+            //get the destination view controller and cast as the results view controller
+            let vc = segue.destinationViewController as! resultsViewController
+            
+            //pass the data from the first question and the correct answer for the current question
+            //to the results view controller
+            vc.q1Answer = self.q1Answer
+            vc.q1Correct = self.q1Correct
+            vc.q2Answer = self.q2Answer
+            
+            //cast the UITextField Answer to an integer
+            let userAnswer = Int(questionAnswer!.text!)
+            
+            //if the user put the same answer as the correct set bool to true
+            if userAnswer == q2Answer {
+                vc.q2Correct = true
+            }
+            //user got answer wrong, set to false
+            else {
+                vc.q2Correct = false
+            }
             
         }
     }
