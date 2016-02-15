@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     
     //image shown to correspond to the image and correct answer
     var imageNumShown = -1
-    var pictures  = ["wisconsin.png", "ohio.png", "illinois.png", "michigan.png", "iowa.png", "minnesota.png"]
     var answers = ["Wisconsin", "Ohio", "Illinois", "Michigan", "Iowa", "Minnesota"]
     
     
@@ -53,8 +52,8 @@ class ViewController: UIViewController {
         //change the image each time the image will appear
         imageNumShown = Int.random(min: 0, max: answers.count-1)
         //set the correct image onto the screen
-        imageView.image = UIImage(named: pictures[imageNumShown])
-        
+        imageView.image = UIImage(named: answers[imageNumShown])
+        imageView.contentMode = UIViewContentMode.ScaleAspectFit
         
         
     }
@@ -80,6 +79,10 @@ class ViewController: UIViewController {
         if segue.identifier == "toSecondViewController" {
             //pass data here
             let vc = segue.destinationViewController as! secondViewController
+            
+            //pass the answer to the question
+            vc.q1Answer = answers[imageNumShown]
+            
             
             //user answered question correctly
             if questionAnswer!.text == answers[imageNumShown] {

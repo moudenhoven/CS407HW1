@@ -10,6 +10,7 @@ import UIKit
 
 class resultsViewController: UIViewController {
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,12 @@ class resultsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    @IBAction func retryClicked(sender: AnyObject) {
+        //go back to first question if the user wants to retry the quiz
+        self.navigationController?.popToRootViewControllerAnimated(true)
+        
+    }
 
     /*
     // MARK: - Navigation

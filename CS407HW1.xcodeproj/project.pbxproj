@@ -105,8 +105,8 @@
 			children = (
 				DA2D13041C6A371800F8FCD3 /* AppDelegate.swift */,
 				DA2D13061C6A371800F8FCD3 /* ViewController.swift */,
-				DAA45F1D1C6E796900E51BAF /* resultsViewController.swift */,
 				DAA45F1E1C6E796900E51BAF /* secondViewController.swift */,
+				DAA45F1D1C6E796900E51BAF /* resultsViewController.swift */,
 				DAA45F1B1C6E6D2400E51BAF /* Int+Extensions.swift */,
 				DA2D13081C6A371800F8FCD3 /* Main.storyboard */,
 				DA2D130B1C6A371800F8FCD3 /* Assets.xcassets */,
