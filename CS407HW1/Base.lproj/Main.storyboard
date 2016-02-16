@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FGm-IZ-RmO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wt4-zI-aev">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -51,7 +51,8 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7j-H5-T3f">
-                                <rect key="frame" x="276" y="351" width="49" height="30"/>
+                                <rect key="frame" x="268" y="351" width="64" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="submitClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ktG-OG-RmK"/>
@@ -91,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1919" y="361"/>
+            <point key="canvasLocation" x="2836.5" y="361"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="8X5-qn-cBY">
@@ -106,13 +107,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Based Question 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yn7-TB-kpd">
-                                <rect key="frame" x="201" y="188" width="199" height="25"/>
+                                <rect key="frame" x="201.5" y="188" width="198.5" height="25"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9x-B2-9L9">
-                                <rect key="frame" x="276" y="303" width="49" height="30"/>
+                                <rect key="frame" x="268.5" y="303" width="64" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="submitClicked:" destination="xfF-wS-BBR" eventType="touchUpInside" id="ITI-lL-f8a"/>
@@ -127,7 +129,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the following sum? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRR-0u-E2b">
-                                <rect key="frame" x="158" y="123" width="285" height="30"/>
+                                <rect key="frame" x="158" y="123.5" width="285" height="29.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -153,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wyg-cD-QQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2684" y="361"/>
+            <point key="canvasLocation" x="3601.5" y="361"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="cQZ-MU-azC">
@@ -175,25 +177,25 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz Results!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fv8-oM-BP9">
-                                <rect key="frame" x="191" y="50" width="218" height="47.5"/>
+                                <rect key="frame" x="191" y="100" width="218" height="47.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Correct: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUp-PQ-xC3">
-                                <rect key="frame" x="202.5" y="122.5" width="195.5" height="29.5"/>
+                                <rect key="frame" x="202" y="172.5" width="195.5" height="29.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Incorrect: 0 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oml-5t-N9Y">
-                                <rect key="frame" x="193" y="177" width="215" height="29.5"/>
+                                <rect key="frame" x="193" y="227" width="215" height="29.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answers: Ohio, number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="er2-dj-qDy">
-                                <rect key="frame" x="181" y="231.5" width="238" height="21.5"/>
+                                <rect key="frame" x="181" y="281.5" width="238" height="21.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -221,28 +223,88 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZS-gV-hBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3461" y="361"/>
+            <point key="canvasLocation" x="4378.5" y="361"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="DbQ-3R-Ubh">
+            <objects>
+                <viewController storyboardIdentifier="StartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SnD-mY-u3O" customClass="StartViewController" customModule="CS407HW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NPe-vS-i0e"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nak-RY-1jF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VAW-Aw-vJk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impossible" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DE0-CD-sZD">
+                                <rect key="frame" x="201" y="232" width="199.5" height="53.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfc-Hh-oHa">
+                                <rect key="frame" x="252.5" y="290.5" width="95.5" height="53.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQr-OW-GJB">
+                                <rect key="frame" x="258" y="394" width="84" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startClicked:" destination="SnD-mY-u3O" eventType="touchUpInside" id="3IR-lY-FU0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wb6-xe-zun">
+                                <rect key="frame" x="265.5" y="173.5" width="70.5" height="53.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64756269629999996" green="0.96175642920000004" blue="0.98624622819999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pfc-Hh-oHa" firstAttribute="top" secondItem="DE0-CD-sZD" secondAttribute="bottom" constant="5" id="1xw-vC-9Qu"/>
+                            <constraint firstItem="bQr-OW-GJB" firstAttribute="top" secondItem="pfc-Hh-oHa" secondAttribute="bottom" constant="50" id="C6L-VH-cQY"/>
+                            <constraint firstItem="DE0-CD-sZD" firstAttribute="top" secondItem="wb6-xe-zun" secondAttribute="bottom" constant="5" id="G9e-wx-4n5"/>
+                            <constraint firstItem="pfc-Hh-oHa" firstAttribute="centerX" secondItem="VAW-Aw-vJk" secondAttribute="centerX" id="VJ4-gR-f3F"/>
+                            <constraint firstItem="bQr-OW-GJB" firstAttribute="centerX" secondItem="VAW-Aw-vJk" secondAttribute="centerX" id="WHL-I2-SqH"/>
+                            <constraint firstItem="DE0-CD-sZD" firstAttribute="centerX" secondItem="VAW-Aw-vJk" secondAttribute="centerX" id="cXm-Os-Lrn"/>
+                            <constraint firstItem="wb6-xe-zun" firstAttribute="centerY" secondItem="VAW-Aw-vJk" secondAttribute="centerY" constant="-100" id="n1q-A1-BAd"/>
+                            <constraint firstItem="wb6-xe-zun" firstAttribute="centerX" secondItem="VAW-Aw-vJk" secondAttribute="centerX" id="zCz-ia-k5h"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GZl-xt-CH6"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toFirstViewController" id="7qn-Ao-RTb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMu-1h-UJ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2005.5" y="361"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="rur-Hr-YJS">
+        <scene sceneID="55X-3T-g9H">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="FGm-IZ-RmO" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="wt4-zI-aev" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UM0-Ik-dJR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9oq-Vo-A0e">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6nP-C7-9LX"/>
+                        <segue destination="SnD-mY-u3O" kind="relationship" relationship="rootViewController" id="SV8-dD-lZM"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0y7-Tf-kP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JS8-6V-LNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="361"/>
+            <point key="canvasLocation" x="1273" y="361"/>
         </scene>
     </scenes>
 </document>

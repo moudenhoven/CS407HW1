@@ -25,6 +25,11 @@ class resultsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //initially hide the labels
+        //numCorrectLabel.transform = CGAffineTransformScale(numCorrectLabel.transform, 0, 0)
+        //numIncorrectLabel.transform = CGAffineTransformScale(numIncorrectLabel.transform, 0, 0)
+        //correctAnswersLabel.transform = CGAffineTransformScale(correctAnswersLabel.transform, 0, 0)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -54,6 +59,20 @@ class resultsViewController: UIViewController {
         numIncorrectLabel.text = "Number Incorrect: \(numIncorrect)"
         correctAnswersLabel.text = "Correct Answers: \(q1Answer!), \(q2Answer!)"
         
+     
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        UIView.animateWithDuration(0.25, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+            
+            self.numCorrectLabel.transform = CGAffineTransformScale(self.numCorrectLabel.transform, 1, 1)
+            
+            //completion block
+            }) { _ in
+                
+        }
         
     }
 
